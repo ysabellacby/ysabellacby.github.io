@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="compute.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+        <title>New City Bakeries</title>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" alt="logo">
+        </header>
+        <main>
+            <form>
+                <h2>Customer Details</h2>
+                <table>
+                    <tr>
+                        <td>First name: </td>
+                        <td><input type="text" id="first"></td>
+                    </tr>
+                    <tr>
+                        <td>Last name: </td>
+                        <td><input type="text" id="last"></td>
+                    </tr>
+                    <tr>
+                        <td>Address: </td>
+                        <td><input type="text" id="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Postal Code: </td>
+                        <td><input type="text" id="postalcode" placeholder="A1A A1A"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone number: </td>
+                        <td><input type="tel" id="tel" placeholder="### ### ####"></td>
+                    </tr>
+                    <tr>
+                        <td>Email </td>
+                        <td><input type="email" id="email" placeholder="youremail@email.com"></td>
+                    </tr>
+                </table>
+
+                <h2>Cake Choices</h2>
+                <div id="cake-selection">
+                    <div id="left">
+                        <h4><input type="radio" name="cake-select" id="sheet">Sheet Cake</h4>
+                        Base Price: <b>$18</b><br>
+                        Length: <input type="number" id="slength" min="30" max="60"><br>
+                        Width: <input type="number" id="swidth" min="30" max="45">
+                    </div>
+                    <div id="right">
+                        <h4><input type="radio" name="cake-select" id="round">Round Cake</h4>
+                        Base Price: <b>$15</b><br>
+                        Radius: <input type="number" id="radius" min="15" max="30">
+                    </div>
+                </div>
+                    <div id="layers">
+                        <h4>Layers</h4>
+                        <input type="radio" name="layer" id="1">
+                        <label for="1">1</label><br>
+                        <input type="radio" name="layer" id="2">
+                        <label for="2">2</label><br>
+                        <input type="radio" name="layer" id="3">
+                        <label for="3">3</label>
+                    </div>
+                    <div id="additional">
+                        <h4>Additional Choices</h4>
+                        <label for="creamcheese">Cream Cheese: $5</label>
+                        <input type="number" name="additional" id="creamcheese"><br>
+                        <label for="fruit">Fruit and Almonds: $7</label>
+                        <input type="number" name="additional" id="fruit"><br>
+                        <label for="jam">Fruit Jam Filling: $4</label>
+                        <input type="number" name="additional" id="jam">
+                        
+                    </div>
+                
+                <br>
+                <br>
+                <button type="button" onclick="validateForm()">Order</button>
+            </form>
+        
+        <div id="customerDetails"></div>
+        <div id="orderDetails"></div>
+        </main>
+    </body>
+</html>

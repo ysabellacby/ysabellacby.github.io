@@ -1,0 +1,30 @@
+html {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    font-family: 'Domine', serif;
+    font-size: 120%;
+}
+
+body {
+    background-color: #ecb057;
+    border: solid #73594d 2px;
+    padding: 8%;
+}
+
+header img, body, #customerDetails, #orderDetails {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#cake-selection {
+    display: flex;
+    padding: 5%;
+    margin-left: 10%;
+}
+
+#left {
+    padding-right: 50px;
+}
